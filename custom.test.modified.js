@@ -228,7 +228,7 @@ describe('Custom Tests', function () {
       isL1Withdrawal: true,
     })
 
-    const recipientBalance = await token.balanceOf(bobEthAddress)
+    const recipientBalance = await token.balanceOf(recipient)
     console.log('recipientBalance', recipientBalance.toString())
     const omniBridgeBalance = await token.balanceOf(omniBridge.address)
     console.log('omniBridgeBalance', omniBridgeBalance.toString())
